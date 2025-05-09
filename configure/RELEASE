@@ -1,8 +1,20 @@
-#RELEASE Location of external products
-# Run "gnumake clean uninstall install" in the application
-# top directory each time this file is changed.
+# Ansible managed
+#
+# RELEASE location of any EPICS module deps for ADAndor3
+#
 
--include $(TOP)/../configure/RELEASE_LIBS_INCLUDE
--include $(TOP)/RELEASE.local
--include $(TOP)/configure/RELEASE.local
+ADANDOR3=/epics/modules/ADAndor3
+ADANDOR3=/epics/modules/ADAndor3
+ADCORE=/epics/modules/ADCore_R3_13
+AREA_DETECTOR=/epics/modules
+ADSUPPORT=/epics/modules/ADSupport
+ASYN=/usr/lib/epics
+AUTOSAVE=/usr/lib/epics
+BUSY=/usr/lib/epics
+CALC=/usr/lib/epics
+DEVIOCSTATS=/usr/lib/epics
+SSCAN=/usr/lib/epics
+SNCSEQ=/usr/lib/epics
+EPICS_BASE=/usr/lib/epics
 
+-include $(TOP)/../configure/EPICS_BASE.$(EPICS_HOST_ARCH)
